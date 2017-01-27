@@ -1,0 +1,25 @@
+# Site settings
+title: 
+email: 
+author: 
+description: 
+baseurl: "" # the subpath of your site, e.g. /blog/
+url: "" # the base hostname & protocol for your site
+
+# Build settings
+markdown: kramdown
+
+sass:
+  style: :expanded # Minify by changing to :compressed
+
+Styles: <add your link here>
+  <link href="https://unpkg.com/basscss@8.0.2/css/basscss.min.css" rel="stylesheet">
+
+# Exclusions from Build
+exclude:
+  - package.json
+  - node_modules
+  - gulpfile
+  - .sass-cache
+  - Gemfile
+  - Gemfile.lock
