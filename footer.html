@@ -1,0 +1,64 @@
+
+<footer class="cf z3 relative pad-x-l border-bottom black-5 bg-white monospace">
+  <div class="max-width-xl float-center pad-y-l border-top-thin">
+    <div class="cf">
+      <div class="col col-12 m-col-6">
+         <!-- Links to Everything -->
+         <h3 class="h6 caps bold"> Contact / Hire </h3>
+         <ul class="list-reset small cf">
+          <li class="inline-block pad-r-m">
+             <a href="mailto:{{site.email}}">
+               <span class="username">{{site.email}}</span>
+             </a>
+          </li>
+          <li class="inline-block pad-r-m">
+            <a href="http://designinc.com/alexbloom" target="_blank">Design Inc.</a>
+          </li>
+         </ul>
+         <h3 class="h6 caps bold"> Connect </h3>
+         <ul class="list-reset small cf">
+
+           {% if site.instagram_username %}
+           <li class="inline-block pad-r-m">
+            <a href="http://instagram.com/{{ site.instagram_username }}">
+              Instagram
+            </a>
+           </li>
+           {% endif %}
+           {% if site.github_username %}
+            <li class="inline-block pad-r-m">
+              <a href="https://github.com/{{ site.github_username }}">
+                Github
+              </a>
+            </li>
+           {% endif %}
+           {% if site.dribbble_username %}
+              <li class="inline-block pad-r-m">
+                <a href="https://dribbble.com/{{ site.dribbble_username }}">
+                  Dribbble
+                </a>
+              </li>
+           {% endif %}
+         </ul>
+       </div>
+    </div>
+    <div class="">
+      <p class="copyright">
+        <small>All content © Alex Bloom 2010&ndash;{{'now'|date:"%Y"}} <br class="l-xl-hide xl-hide"> All code 100% &#9851; under GPL. </small>
+      </p>
+    </div>
+  </div>
+</footer>
+<!-- <script src="../js/plugins.js"></script> -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/lory.js/2.2.0/lory.min.js"></script>
+<script>
+    'use strict';
+    document.addEventListener('DOMContentLoaded', function () {
+        Array.prototype.slice.call(document.querySelectorAll('.js_slider')).forEach(function (element, index) {
+            lory(element, {
+              infinite: 1,
+              enableMouseEvents: true,
+            });
+        });
+    });
+</script>
